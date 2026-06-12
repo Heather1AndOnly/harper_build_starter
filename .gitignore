@@ -1,0 +1,7 @@
+
+.env
+__pycache__/
+*.pyc
+harper_voice_*.mp3
+data/
+.streamlit/secrets.toml
