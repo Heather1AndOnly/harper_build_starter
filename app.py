@@ -170,8 +170,8 @@ def render_chat(user: str, mode_key: str):
     for m in history:
         if m["role"] == "system":
             continue
-        avatar = "🦋" if m["role"] == "assistant" else "🧑"
-        with st.chat_message(m["role"], avatar=avatar):
+        icon = "🦋" if m["role"] == "assistant" else "🧑"
+        with st.chat_message(m["role"], avatar=icon):
             if is_shared and m.get("speaker"):
                 st.markdown(f"**{m['speaker']}:** {m['content']}")
             else:
